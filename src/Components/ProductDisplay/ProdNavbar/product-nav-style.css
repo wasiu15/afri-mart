@@ -1,0 +1,13 @@
+.prod-head {
+  background-color: transparent;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+}
+.prod-heading {
+  padding: 0;
+}
+.btn-toggle {
+  font-size: 2em;
+  cursor: pointer;
+}

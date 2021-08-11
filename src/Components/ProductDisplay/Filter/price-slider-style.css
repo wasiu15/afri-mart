@@ -1,0 +1,23 @@
+.price-range-slider {
+  margin-top: 3em;
+  width: 100%;
+  padding: 10px 20px;
+}
+.slider-range {
+  padding: 3em !important;
+}
+.price-range-slider .range-value input {
+  width: 100%;
+  background: none;
+  font-size: 16px;
+  font-weight: initial;
+  box-shadow: none;
+  border: none;
+}
+.price-range-slider .range-bar {
+  border: none;
+  height: 3px;
+}
+.price-range-slider .range-bar .ui-slider-range {
+  background: #06b9c0;
+}

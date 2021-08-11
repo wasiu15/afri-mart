@@ -2,23 +2,39 @@
   padding: 0;
 }
 
+.cart-sidebar {
+  display: none;
+}
+
 .productContainer .wrapper {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 6fr;
   padding: 0;
 }
 .product {
   padding: 1em;
 }
 .product-list {
-  padding: 0 2em;
+  padding: 1rem 2em;
+}
+#heading-mobile {
+  display: none;
 }
 
 @media (max-width: 700px) {
-  .sidebar {
+  .filter-sidebar,
+  .cart-sidebar {
     display: none;
   }
   .productContainer .wrapper {
     grid-template-columns: 1fr;
+  }
+
+  #heading-mobile {
+    display: inline;
+    text-align: center;
+  }
+  #heading-window {
+    display: none;
   }
 }

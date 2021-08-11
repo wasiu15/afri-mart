@@ -2,37 +2,56 @@ import React from "react";
 import "./product-nav-style.css";
 
 const ProductNavbar = () => {
+  var openORclose_filter = "openned";
+  var openORclose_cart = "closed";
   return (
     <div className="header-2 prod-head">
       <button
         id="toggle-btn"
-        onClick={hey}
+        onClick={toggleFilter}
         className="btn-toggle fas fa-bars"
       ></button>
 
-      <h1 class="heading prod-heading" id="heading-windows">
+      <h1 className="heading prod-heading" id="heading-window">
         latest <span>products</span>
       </h1>
 
       <div className="icons">
-        <a href="#" className="fas fa-shopping-cart"></a>
+        <a href="#" className="fas fa-shopping-cart" onClick={toggleCart}></a>
         <a href="#" className="fas fa-heart"></a>
         <a href="#" className="fas fa-user-circle"></a>
       </div>
     </div>
   );
 
-  var openORclose = "openned";
-  function hey() {
-    console.log("HEy");
-    if (openORclose == "openned") {
-      document.querySelector(".sidebar").style.display = "none";
+  function toggleFilter() {
+    if (openORclose_filter == "openned") {
+      document.querySelector(".filter-sidebar").style.display = "none";
+      document.querySelector(".cart-sidebar").style.display = "none";
       document.querySelector("#wrap").style.gridTemplateColumns = "1fr";
-      openORclose = "closed";
+      openORclose_filter = "closed";
+      openORclose_cart = "closed";
     } else {
-      document.querySelector(".sidebar").style.display = "block";
+      document.querySelector(".filter-sidebar").style.display = "block";
+      document.querySelector(".cart-sidebar").style.display = "none";
       document.querySelector("#wrap").style.gridTemplateColumns = "1fr 5fr";
-      openORclose = "openned";
+      openORclose_filter = "openned";
+      openORclose_cart = "closed";
+    }
+  }
+  function toggleCart() {
+    if (openORclose_cart == "openned") {
+      document.querySelector(".cart-sidebar").style.display = "none";
+      document.querySelector(".filter-sidebar").style.display = "none";
+      document.querySelector("#wrap").style.gridTemplateColumns = "1fr";
+      openORclose_cart = "closed";
+      openORclose_filter = "closed";
+    } else {
+      document.querySelector(".cart-sidebar").style.display = "block";
+      document.querySelector(".filter-sidebar").style.display = "none";
+      document.querySelector("#wrap").style.gridTemplateColumns = "3fr 1fr";
+      openORclose_cart = "openned";
+      openORclose_filter = "closed";
     }
   }
 };

@@ -81,6 +81,9 @@
   column-gap: 0.5rem;
   border-bottom: solid 1px lightgray;
 }
+.cart-item:last-child {
+  border: none;
+}
 .cart-item .cart-img-div {
   height: 170px;
   width: 140px;
@@ -111,7 +114,14 @@
   bottom: 0;
 }
 .del-and-love-ul li {
+  color: darkgray;
   display: inline;
+}
+.del-and-love-ul li span {
+  margin-right: 0.5rem;
+}
+.del-and-love-ul .move-wish-right {
+  padding-left: 2.5rem;
 }
 
 .cart-item-quantity {

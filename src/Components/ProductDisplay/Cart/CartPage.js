@@ -24,10 +24,11 @@ const CartPage = () => {
                 <li className="float-down">
                   <ul className="del-and-love-ul">
                     <li>
-                      <span>DEL</span>REMOVE ITEM
+                      <span className="fa fa-trash"></span>REMOVE ITEM
                     </li>
                     <li>
-                      <span>LOVE</span>MOVE TO WISH LIST
+                      <span className="fa fa-heart move-wish-right"></span>MOVE
+                      TO WISH LIST
                     </li>
                   </ul>
                 </li>
@@ -57,10 +58,11 @@ const CartPage = () => {
                 <li className="float-down">
                   <ul className="del-and-love-ul">
                     <li>
-                      <span>DEL</span>REMOVE ITEM
+                      <span className="fa fa-trash"></span>REMOVE ITEM
                     </li>
                     <li>
-                      <span>LOVE</span>MOVE TO WISH LIST
+                      <span className="fa fa-heart move-wish-right"></span>MOVE
+                      TO WISH LIST
                     </li>
                   </ul>
                 </li>

@@ -170,6 +170,8 @@
 
 .filter-container {
   border-right: solid 1px lightgray;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  padding-bottom: 2rem;
 }
 .filter-inner {
   padding-top: 4em;

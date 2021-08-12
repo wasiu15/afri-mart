@@ -15,7 +15,7 @@ const ProductContainer = ({ products }) => {
         <div className="filter-sidebar">
           <Filter />
         </div>
-        <div className="App">
+        <div className="app">
           <main className="main">
             <div className="site-section">
               {/* <!-- header section ends --> */}

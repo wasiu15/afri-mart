@@ -14,6 +14,7 @@ import { div } from "prelude-ls";
 import ProductList from "./Components/ProductDisplay/ProductList";
 import Navbar from "./Components/Navbar";
 import ProductHeader from "./Components/ProductDisplay/ProductHeader";
+import CartPage from "./Components/ProductDisplay/Cart/CartPage";
 
 function App() {
   const [categories, setCategories] = useState([
@@ -254,22 +255,22 @@ function App() {
         <Header />
         <Navbar />
       </header> */}
-
-      <header>
-        <Header />
-        <ProductContainer products={productList} />
-      </header>
-
-      <div class="d-flex" id="wrapper">
-        {/* <!-- Page content wrapper--> */}
-        <div id="page-content-wrapper">
-          {/* <Navbar /> */}
-          {/* root content */}
-          {/* <ProductList products={productList} /> */}
-        </div>
-      </div>
-      {/* <Products products={productList} /> */}
+      <CartPage />
     </div>
+    // <header>
+    //   <Header />
+    //   <ProductContainer products={productList} />
+    // </header>
+
+    // <div class="d-flex" id="wrapper">
+    //   <!-- Page content wrapper-->
+    //   <div id="page-content-wrapper">
+    //     {/* <Navbar /> */}
+    //     {/* root content */}
+    //     {/* <ProductList products={productList} /> */}
+    //   </div>
+    // </div>
+    // {/* <Products products={productList} /> */}
     // <Router>
     //   <Switch>
     //     <Route path="/">

@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "../ProductHeader/Header";
 
 const CartPage = () => {
   return (

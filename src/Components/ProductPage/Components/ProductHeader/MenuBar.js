@@ -1,29 +1,30 @@
 import React from "react";
-import "./product-nav-style.css";
+import "./menu-bar-style.css";
 
-const ProductNavbar = () => {
+const MenuBar = () => {
   var openORclose_filter = "openned";
   var openORclose_cart = "closed";
   return (
-    <div className="header-2 prod-head">
-      <button
-        id="toggle-btn"
-        onClick={toggleFilter}
-        className="btn-toggle fas fa-bars"
-      ></button>
+    <div>
+      <div className="header-2 prod-head">
+        <button
+          id="toggle-btn"
+          onClick={toggleFilter}
+          className="btn-toggle fas fa-bars"
+        ></button>
 
-      <h1 className="heading prod-heading" id="heading-window">
-        latest <span>products</span>
-      </h1>
+        <h1 className="heading prod-heading" id="heading-window">
+          latest <span>products</span>
+        </h1>
 
-      <div className="icons">
-        <a href="#" className="fas fa-shopping-cart" onClick={toggleCart}></a>
-        <a href="#" className="fas fa-heart"></a>
-        <a href="#" className="fas fa-user-circle"></a>
+        <div className="icons">
+          <a href="#" className="fas fa-shopping-cart" onClick={toggleCart}></a>
+          <a href="#" className="fas fa-heart"></a>
+          <a href="#" className="fas fa-user-circle"></a>
+        </div>
       </div>
     </div>
   );
-
   function toggleFilter() {
     if (openORclose_filter == "openned") {
       document.querySelector(".filter-sidebar").style.display = "none";
@@ -56,4 +57,4 @@ const ProductNavbar = () => {
   }
 };
 
-export default ProductNavbar;
+export default MenuBar;

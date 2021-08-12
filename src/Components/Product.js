@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import ProductContainer from "./ProductDisplay/ProductContainer";
 
 const Product = ({ product }) => {
   return <Fragment>{productBox(product)}</Fragment>;

@@ -1,6 +1,6 @@
 import React from "react";
 import "./filter-style.css";
-import PriceSlider from "./PriceSlider";
+import PriceSlider from "./PriceSlider/PriceSlider";
 
 const Filter = () => {
   return (

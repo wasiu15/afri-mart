@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./cart-style.css";
 
 const Cart = () => {
   return (
-    <div className="cart-sidebar">
+    <Fragment>
       <div className="cart-header">
         <button className="close-cart">X</button>
         <strong>
@@ -65,10 +65,8 @@ const Cart = () => {
           <button>View Cart</button>
         </div>
       </div>
-    </div>
+    </Fragment>
   );
 };
-
-function cartProducts() {}
 
 export default Cart;

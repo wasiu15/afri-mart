@@ -1,20 +1,19 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Categories from "./Components/Categories";
-import Products from "./Components/Products";
-import Header from "./Components/Header";
+import Products from "./Components/ProductPage/Products";
+import Header from "./Components/General/Header";
 import Deal from "./Components/Deal";
 import Contact from "./Components/Contact";
 import Newsletter from "./Components/Newsletter";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ProductContainer from "./Components/ProductDisplay/ProductContainer";
 import { div } from "prelude-ls";
-import ProductList from "./Components/ProductDisplay/ProductList";
 import Navbar from "./Components/Navbar";
-import ProductHeader from "./Components/ProductDisplay/ProductHeader";
-import CartPage from "./Components/ProductDisplay/Cart/CartPage";
+import Home from "./Components/HomePage/Home";
+import Footer from "./Components/General/Footer";
+import Cart from "./Components/ProductPage/Components/SideCart/CartPage";
 
 function App() {
   const [categories, setCategories] = useState([
@@ -250,13 +249,16 @@ function App() {
   GetAllProducts();
 
   return (
-    <div>
+    <Fragment>
       {/* <header>
         <Header />
         <Navbar />
       </header> */}
-      <CartPage />
-    </div>
+      <Home />
+      {/* <Products products={productList} /> */}
+      {/* <Cart /> */}
+      {/* <CartPage /> */}
+    </Fragment>
     // <header>
     //   <Header />
     //   <ProductContainer products={productList} />

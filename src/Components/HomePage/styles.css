@@ -60,10 +60,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --title-color: #f1f3f2;

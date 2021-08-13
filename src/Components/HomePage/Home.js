@@ -7,10 +7,11 @@ import Services from "./Components/Services";
 import Menu from "./Components/Menu";
 import AppStore from "./Components/AppStore";
 import ContactUs from "./Components/ContactUs";
+import "./styles.css";
 
 const Home = () => {
   return (
-    <Fragment>
+    <Fragment className="Home">
       {ScrollUp()}
       <Header />
       <main className="l-main">

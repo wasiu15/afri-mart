@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -10,9 +11,9 @@ const Home = () => {
           <h2 className="home__subtitle">
             Try the best food of <br /> the week.
           </h2>
-          <a href="#" className="button">
+          <Link to="/products" className="button">
             View Menu
-          </a>
+          </Link>
         </div>
 
         <img src="assets/img/home.png" alt="" className="home__img" />

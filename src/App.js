@@ -3,7 +3,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Categories from "./Components/Categories";
-import Products from "./Components/ProductPage/Products";
+import ProductsPage from "./Components/ProductPage/Products";
 import Header from "./Components/General/Header";
 import Deal from "./Components/Deal";
 import Contact from "./Components/Contact";
@@ -11,9 +11,10 @@ import Newsletter from "./Components/Newsletter";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { div } from "prelude-ls";
 import Navbar from "./Components/Navbar";
-import Home from "./Components/HomePage/Home";
+import HomePage from "./Components/HomePage/Home";
 import Footer from "./Components/General/Footer";
 import Cart from "./Components/ProductPage/Components/SideCart/CartPage";
+import CartPage from "./Components/ProductPage/Components/SideCart/CartPage";
 
 function App() {
   const [categories, setCategories] = useState([
@@ -250,57 +251,20 @@ function App() {
 
   return (
     <Fragment>
-      {/* <header>
-        <Header />
-        <Navbar />
-      </header> */}
-      <Home />
-      {/* <Products products={productList} /> */}
-      {/* <Cart /> */}
-      {/* <CartPage /> */}
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route path="/products">
+            <ProductsPage products={productList} />
+          </Route>
+          <Route path="/cart">
+            <CartPage />
+          </Route>
+        </Switch>
+      </Router>
     </Fragment>
-    // <header>
-    //   <Header />
-    //   <ProductContainer products={productList} />
-    // </header>
-
-    // <div class="d-flex" id="wrapper">
-    //   <!-- Page content wrapper-->
-    //   <div id="page-content-wrapper">
-    //     {/* <Navbar /> */}
-    //     {/* root content */}
-    //     {/* <ProductList products={productList} /> */}
-    //   </div>
-    // </div>
-    // {/* <Products products={productList} /> */}
-    // <Router>
-    //   <Switch>
-    //     <Route path="/">
-    //       <Cart />
-    //     </Route>
-    //   </Switch>
-    // </Router>
-    // <Router>
-    //   <div className="App">
-    //     <Switch>
-    //       <Route exact path="/">
-    //         <HomeSection />
-    //         <Categories categories={CategoryList} />
-    //         <section className="product" id="product">
-    //            <h1 className="heading">latest <span>products</span></h1>
-    //            <Products products={productList} />
-    //          </ section>
-    //         <Deal />
-    //         <Contact />
-    //         <Newsletter />
-    //       </Route>
-
-    //       <Route path="/Compornent/Cart/ViewCart.js">
-    //         <Cart />
-    //       </Route>
-    //     </Switch>
-    //   </div>
-    // </Router>
   );
 
   function GetAllProducts() {

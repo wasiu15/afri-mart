@@ -12,10 +12,10 @@
   padding: 0;
 }
 .Products .product {
-  padding: 1em;
+  padding: 8px;
 }
 .Products .product-list {
-  padding: 1rem 2em;
+  padding: 8px 2em;
 }
 .Products #heading-mobile {
   display: none;
@@ -38,7 +38,7 @@
     display: none;
   }
   .Products .header-2 {
-    padding: 2rem !important;
+    padding: 16px !important;
   }
 }
 
@@ -47,12 +47,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
 
-.Products :root {
+:root {
   --green: #f79320;
   --black: #2c2c54;
 }
 
-.Products * {
+* {
   font-family: "Nunito", sans-serif;
   margin: 0;
   padding: 0;
@@ -64,32 +64,31 @@
   transition: all 0.2s linear;
 }
 
-.Products *::selection {
+*::selection {
   background: var(--green);
   color: #fff;
 }
 
-html .Products {
-  font-size: 62.5%;
+html {
   overflow-x: hidden;
-  scroll-padding-top: 6.5rem;
+  scroll-padding-top: 52px;
   scroll-behavior: smooth;
 }
 
-body .Products {
+body {
   margin: 0;
 }
 .Products section {
-  padding: 2rem 4%;
+  padding: 16px 4%;
 }
 
 .Products .btn {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 8px;
   background: var(--green);
   color: #fff;
-  padding: 0.8rem 3rem;
-  font-size: 1.7rem;
+  padding: 6.4px 28px;
+  font-size: 13.6px;
   text-align: center;
   cursor: pointer;
 }
@@ -102,9 +101,9 @@ body .Products {
   text-align: center;
   color: var(--black);
   text-transform: uppercase;
-  padding: 1rem;
-  font-size: 3.5rem;
-  padding-bottom: 2rem;
+  padding: 8px;
+  font-size: 24px;
+  padding-bottom: 128px;
 }
 
 .heading span {
@@ -116,17 +115,17 @@ body .Products {
   background: #eee;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 5% 0.5rem 9%;
+  padding: 8px 5% 4px 9%;
 }
 
 .logo {
   color: var(--black);
   font-weight: bolder;
-  font-size: 3rem;
+  font-size: 24px;
 }
 
 .logo i {
-  padding-right: 0.5rem;
+  padding-right: 4px;
   color: var(--green);
 }
 
@@ -144,24 +143,24 @@ body .Products {
 
 .header-1 .search-box-container {
   display: flex;
-  height: 4rem;
+  height: 32px;
 }
 
 .header-1 .search-box-container #search-box {
   height: 100%;
   width: 100%;
-  padding: 0.5rem;
-  font-size: 2rem;
+  padding: 4px;
+  font-size: 16px;
   color: #333;
-  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  border: 0.8px solid rgba(0, 0, 0, 0.3);
   text-transform: none;
 }
 
 .header-1 .search-box-container label {
   height: 100%;
-  width: 5rem;
-  font-size: 2rem;
-  line-height: 4rem;
+  width: 40px;
+  font-size: 16px;
+  line-height: 32px;
   color: #fff;
   background: var(--green);
   text-align: center;
@@ -178,7 +177,7 @@ body .Products {
   align-items: center;
   justify-content: space-between;
   padding: 0 2%;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
 
@@ -191,9 +190,9 @@ body .Products {
 }
 
 .header-2 .navbar a {
-  padding: 0 1.5rem;
-  font-size: 2rem;
-  border-radius: 0.5rem;
+  padding: 0 12px;
+  font-size: 16px;
+  border-radius: 4px;
   color: var(--black);
 }
 
@@ -203,9 +202,9 @@ body .Products {
 }
 
 .header-2 .icons a {
-  font-size: 2.5rem;
+  font-size: 20px;
   color: var(--black);
-  padding-left: 1rem;
+  padding-left: 8px;
 }
 
 .header-2 .icons a:hover {
@@ -213,73 +212,73 @@ body .Products {
 }
 
 .header-2 .icons a .cart-icons-value {
-  font-size: 1.5rem;
+  font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #f79320;
 }
 
 #menu-bar {
-  font-size: 3rem;
-  border-radius: 0.5rem;
-  border: 0.1rem solid var(--black);
-  padding: 0.8rem 1.5rem;
+  font-size: 24px;
+  border-radius: 4px;
+  border: 0.8px solid var(--black);
+  padding: 6.4px 12px;
   color: var(--black);
   cursor: pointer;
   display: none;
 }
 
 .product .box-container {
-  margin-top: 3rem;
+  margin-top: 18px;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 12px;
 }
 
 .product .box-container .box {
-  flex: 1 1 25rem;
+  flex: 1 1 225px;
   text-align: center;
-  padding: 1.5rem;
-  border: 0.1rem solid rgba(0, 0, 0, 0.3);
-  border-radius: 0.5rem;
+  padding: 12px;
+  border: 0.8px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
   overflow: hidden;
   position: relative;
 }
 
 .product .box-container .box img {
-  height: 15rem;
+  height: 120px;
 }
 
 .product .box-container .box .discount {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 8px;
+  left: 8px;
   background: rgba(0, 255, 0, 0.1);
   color: var(--green);
-  padding: 0.7rem 1rem;
-  font-size: 1.5rem;
+  padding: 5.6px;
+  font-size: 12px;
 }
 
 .product .box-container .box .icons {
   position: absolute;
-  top: 0.5rem;
-  right: -6rem;
+  top: 4px;
+  right: -48px;
 }
 
 .product .box-container .box:hover .icons {
-  right: 0.5rem;
+  right: 4px;
 }
 
 .product .box-container .box .icons a {
   display: block;
-  height: 4.5rem;
-  width: 4.5rem;
-  line-height: 4.5rem;
-  font-size: 1.5rem;
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  font-size: 12px;
   color: var(--black);
   background: rgba(0, 0, 0, 0.05);
   border-radius: 50%;
-  margin-top: 0.7rem;
+  margin-top: 5.6px;
 }
 
 .product .box-container .box .icons a:hover {
@@ -289,23 +288,23 @@ body .Products {
 
 .product .box-container .box h3 {
   color: var(--black);
-  font-size: 2rem;
+  font-size: 16px;
 }
 
 .product .box-container .box .stars i {
-  padding: 1rem 0.1rem;
-  font-size: 1.7rem;
+  padding: 8px 0.8px;
+  font-size: 13.6px;
   color: gold;
 }
 
 .product .box-container .box .price {
-  font-size: 1.5rem;
+  font-size: 12px;
   color: #333;
-  padding: 0.5rem 0;
+  padding: 4px 0;
 }
 
 .product .box-container .box .price span {
-  font-size: 1.5rem;
+  font-size: 12px;
   color: #999;
   text-decoration: line-through;
 }
@@ -314,27 +313,27 @@ body .Products {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
+  padding-top: 8px;
+  padding-bottom: 4px;
 }
 
 .product .box-container .box .quantity span {
-  padding: 0 0.7rem;
-  font-size: 1.3rem;
+  padding: 0 5.6px;
+  font-size: 10.4;
 }
 
 .product .box-container .box .quantity input {
-  border: 0.1rem solid rgba(0, 0, 0, 0.3);
-  font-size: 1rem;
+  border: 0.8px solid rgba(0, 0, 0, 0.3);
+  font-size: 8px;
   font-weight: bolder;
   color: var(--black);
-  padding: 0.3rem;
+  padding: 2.4px;
   background: rgba(0, 0, 0, 0.05);
 }
 
 .product .box-container .box .btn {
   display: block;
-  font-size: 1.3rem;
+  font-size: 10.4px;
 }
 
 /* media queries  */
@@ -347,7 +346,7 @@ body .Products {
 
 @media (max-width: 991px) {
   section {
-    padding: 2rem;
+    padding: 16px;
   }
 }
 
@@ -357,12 +356,12 @@ body .Products {
   }
 
   .header-2 .navbar a {
-    font-size: 2.5rem;
+    font-size: 20px;
     display: block;
     text-align: center;
     background: #fff;
-    padding: 1rem;
-    margin: 1.5rem 0;
+    padding: 8px;
+    margin: 12px 0;
   }
 }
 
@@ -372,7 +371,7 @@ body .Products {
   }
 
   .heading {
-    font-size: 3rem;
+    font-size: 24px;
   }
 
   .header-1 {
@@ -384,7 +383,7 @@ body .Products {
   }
 
   .logo {
-    font-size: 4rem;
+    font-size: 32px;
     text-align: center;
   }
 }

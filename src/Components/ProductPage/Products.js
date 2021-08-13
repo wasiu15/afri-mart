@@ -3,7 +3,7 @@ import Cart from "./Components/SideCart/Cart";
 import MenuBar from "./Components/ProductHeader/MenuBar";
 import Header from "./Components/ProductHeader/Header";
 import Filter from "./Components/SideFilter/Filter";
-import ProductsDisplay from "../Products";
+import ProductsDisplay from "./Components/Products/Products";
 import "./style.css";
 import "./product-style.css";
 

@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 import "./cart-style.css";
 
 const Cart = () => {
@@ -62,7 +63,7 @@ const Cart = () => {
               <p className="cart-prod-price">$252.00</p>
             </strong>
           </div>
-          <button>View Cart</button>
+          <Link to="/cart">View Cart</Link>
         </div>
       </div>
     </Fragment>

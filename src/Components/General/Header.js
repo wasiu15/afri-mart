@@ -7,7 +7,8 @@ const Header = () => {
       <header className="l-header" id="header">
         <nav className="nav bd-container">
           <a href="#" className="nav__logo">
-            Tasty
+            <span className="fas fa-shopping-basket"></span>
+            Crusty
           </a>
 
           <div className="nav__menu" id="nav-menu">

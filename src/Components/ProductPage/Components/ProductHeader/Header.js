@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="header-1">
       <a href="#" className="logo">
-        <i className="fas fa-shopping-basket"></i>groco
+        <i className="fas fa-shopping-basket"></i>Crusty
       </a>
       <form action="" className="search-box-container">
         <input

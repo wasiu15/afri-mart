@@ -147,22 +147,6 @@ function App() {
       ],
     },
     {
-      categoryId: 2,
-      categoryName: "Juice",
-      categoryDiscount: "44%",
-      categoryImage: "./images/category-1.png",
-      products: [
-        {
-          productId: 2,
-          productName: "prod-name",
-          productCurrentPrice: "prod-price",
-          productOldPrice: "prod-price-discount",
-          productDiscount: "50%",
-          productImage: "./images/category-2.png",
-        },
-      ],
-    },
-    {
       categoryId: 3,
       categoryName: "Meat",
       categoryDiscount: "35%",

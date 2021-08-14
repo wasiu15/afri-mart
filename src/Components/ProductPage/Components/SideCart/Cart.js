@@ -4,7 +4,7 @@ import "./cart-style.css";
 
 const Cart = () => {
   return (
-    <Fragment>
+    <div className="class-outer-body">
       <div className="cart-header">
         <button className="close-cart">X</button>
         <strong>
@@ -29,7 +29,7 @@ const Cart = () => {
           </li>
           <li className="cart-prod">
             <div className="cart-prod-img">
-              <img height="70px" width="100px" src="./images/category-2.png" />
+              <img src="./images/category-2.png" />
             </div>
             <div className="cart-prod-details">
               <ul>
@@ -43,7 +43,7 @@ const Cart = () => {
           </li>
           <li className="cart-prod">
             <div className="cart-prod-img">
-              <img height="70px" width="100px" src="./images/category-2.png" />
+              <img src="./images/category-2.png" />
             </div>
             <div className="cart-prod-details">
               <ul>
@@ -66,7 +66,7 @@ const Cart = () => {
           <Link to="/cart">View Cart</Link>
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 };
 

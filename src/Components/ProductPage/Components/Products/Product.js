@@ -14,7 +14,7 @@ function productBox(product) {
         <a href="#" className="fas fa-share"></a>
         <a href="#" className="fas fa-eye"></a>
       </div>
-      <img src={product.productImage} height="10rem" />
+      <img src={product.productImage} />
       <h3>{product.productName}</h3>
       <div className="stars">
         <i className="fas fa-star"></i>

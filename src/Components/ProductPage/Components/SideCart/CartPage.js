@@ -5,7 +5,9 @@ const CartPage = () => {
   return (
     <div>
       <div className="cart-head">
-        <h1 className="cart-title">Shopping cart</h1>
+        <h1 className="heading prod-heading cart-title" id="heading-window">
+          Shopping <span>cart</span>
+        </h1>
       </div>
       <div className="cart-page-container">
         <div className="cart-section">
@@ -21,7 +23,9 @@ const CartPage = () => {
               </div>
               <ul>
                 <h3 className="checkout-total-head">Water Leaf</h3>
-                <li>CATEGORY: VEGETABLE</li>
+                <li>
+                  <strong>CATEGORY:</strong> VEGETABLE
+                </li>
                 <li className="float-down">
                   <ul className="del-and-love-ul">
                     <li>
@@ -37,7 +41,7 @@ const CartPage = () => {
               <div className="cart-item-quantity">
                 <div className="cart-increment-group">
                   <div className="div-of-plus">-</div>
-                  <div>1</div>
+                  <div className="div-of-counter">1</div>
                   <div className="div-of-minus">+</div>
                 </div>
                 <br />
@@ -55,7 +59,9 @@ const CartPage = () => {
               </div>
               <ul>
                 <h3 className="checkout-total-head">Water Leaf</h3>
-                <li>CATEGORY: VEGETABLE</li>
+                <li>
+                  <strong>CATEGORY:</strong> VEGETABLE
+                </li>
                 <li className="float-down">
                   <ul className="del-and-love-ul">
                     <li>

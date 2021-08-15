@@ -26,33 +26,25 @@ const MenuBar = () => {
     </div>
   );
   function toggleFilter() {
-    if (openORclose_filter == "openned") {
+    if (document.querySelector(".filter-sidebar").style.display == "openned") {
       document.querySelector(".filter-sidebar").style.display = "none";
       document.querySelector(".cart-sidebar").style.display = "none";
       document.querySelector("#wrap").style.gridTemplateColumns = "1fr";
-      openORclose_filter = "closed";
-      openORclose_cart = "closed";
     } else {
       document.querySelector(".filter-sidebar").style.display = "block";
       document.querySelector(".cart-sidebar").style.display = "none";
       document.querySelector("#wrap").style.gridTemplateColumns = "1fr 5fr";
-      openORclose_filter = "openned";
-      openORclose_cart = "closed";
     }
   }
   function toggleCart() {
-    if (openORclose_cart == "openned") {
+    if (document.querySelector(".cart-sidebar").style.display == "block") {
       document.querySelector(".cart-sidebar").style.display = "none";
       document.querySelector(".filter-sidebar").style.display = "none";
       document.querySelector("#wrap").style.gridTemplateColumns = "1fr";
-      openORclose_cart = "closed";
-      openORclose_filter = "closed";
     } else {
       document.querySelector(".cart-sidebar").style.display = "block";
       document.querySelector(".filter-sidebar").style.display = "none";
       document.querySelector("#wrap").style.gridTemplateColumns = "3fr 1fr";
-      openORclose_cart = "openned";
-      openORclose_filter = "closed";
     }
   }
 };

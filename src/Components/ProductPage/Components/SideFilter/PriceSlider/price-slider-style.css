@@ -21,3 +21,43 @@
 .price-range-slider .range-bar .ui-slider-range {
   background: #06b9c0;
 }
+
+/* TEXT FIELD STYLES  */
+.inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.MuiOutlinedInput-input {
+  padding: 10px 10px 10px 0 !important;
+}
+.MuiTextField-root {
+  width: 70px !important;
+}
+.MuiOutlinedInput-notchedOutline {
+  border-color: green !important;
+  border-width: 1px !important;
+}
+.PrivateNotchedOutline-le.item-group li,
+.item-group label {
+  color: green !important;
+  padding-left: 5px !important;
+}
+.item-group {
+  padding: 10px;
+}
+
+/* RANGE SLIDER */
+.MuiSlider-root {
+  color: green !important;
+}
+.slider {
+  padding: 0 8px;
+}
+
+/* PRICE RANGE CONTAINER */
+
+.price-range-container {
+  padding: 10px;
+  border: solid 1px green;
+  border-radius: 5px;
+}

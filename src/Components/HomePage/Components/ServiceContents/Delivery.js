@@ -17,7 +17,7 @@ const Delivery = () => {
 function SVGPath() {
   return (
     <svg className="services__img" xmlns="http://www.w3.org/2000/svg">
-      <g clip-path="url(#clip0)">
+      <g clipPath="url(#clip0)">
         <path
           d="M19.1978 49.6016C17.4308 49.6016 15.9981 51.0342 15.9981 52.8012C15.9981 54.5682 17.4308 
                             56.0008 19.1978 56.0008C20.9648 56.0008 22.3974 54.5682 22.3974 52.8012C22.3974 51.0342 20.9648 

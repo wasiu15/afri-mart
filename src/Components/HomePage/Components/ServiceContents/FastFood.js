@@ -17,7 +17,7 @@ const FastFood = () => {
 function SVGPath() {
   return (
     <svg className="services__img" xmlns="http://www.w3.org/2000/svg">
-      <g clip-path="url(#clip0)">
+      <g clipPath="url(#clip0)">
         <path
           d="M55.82 22.0395C55.5475 21.5164 54.9027 21.3132 54.3795 21.5855L54.3794 
                             21.5857L49.4885 24.1283H49.481L32.1524 33.1455L38.0258 14.5397C38.0258 14.5323 

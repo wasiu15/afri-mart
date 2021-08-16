@@ -11,7 +11,7 @@ import "./styles.css";
 
 const Home = () => {
   return (
-    <Fragment className="Home">
+    <div className="Home">
       {ScrollUp()}
       <Header />
       <main className="l-main">
@@ -23,7 +23,7 @@ const Home = () => {
         <ContactUs />
       </main>
       <Footer />
-    </Fragment>
+    </div>
   );
 };
 

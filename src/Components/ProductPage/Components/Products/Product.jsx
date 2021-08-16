@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
 import NumberSelector from "./Components/NumberSelector";
 
 const Product = ({ product }) => {
@@ -32,15 +31,7 @@ function productBox(product) {
         <NumberSelector />
         <span> /kg </span>
       </div>
-      {/* <Link
-        onClick={add}
-        to="/Component/ProductDisplay/ProductContainer.js"
-        className="btn"
-      >
-        add to
-      </Link> */}
-      {/* {(document.getElementById("root").innerHTML = <div></div>)} */}
-      <a onClick={add} href="./product-page/index.html" className="btn">
+      <a onClick={add} href="#" className="btn">
         add to cart
       </a>
     </div>

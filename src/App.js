@@ -1,16 +1,10 @@
 import { Fragment, useState } from "react";
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import ProductsPage from "./Components/ProductPage/Products";
-import Header from "./Components/General/Header";
-import Contact from "./Components/Contact";
+import ProductsPage from "./Components/ProductPage/Products.jsx";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { div } from "prelude-ls";
-import HomePage from "./Components/HomePage/Home";
-import Footer from "./Components/General/Footer";
-import Cart from "./Components/ProductPage/Components/SideCart/CartPage";
-import CartPage from "./Components/ProductPage/Components/SideCart/CartPage";
+import HomePage from "./Components/HomePage/Home.jsx";
+import CartPage from "./Components/ProductPage/Components/SideCart/CartPage.jsx";
 
 function App() {
   const [categories, setCategories] = useState([

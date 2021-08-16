@@ -13,7 +13,10 @@ const Header = () => {
           id="search-box"
           placeholder="search here..."
         />
-        <label for="search-box" className="search-btn fas fa-search"></label>
+        <label
+          htmlFor="search-box"
+          className="search-btn fas fa-search"
+        ></label>
       </form>
     </div>
   );

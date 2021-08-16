@@ -65,11 +65,11 @@ const Filter = () => {
               value="1"
               defaultChecked="checked"
             />
-            <label for="01">Bannana</label>
+            <label htmlFor="01">Bannana</label>
             <input id="02" type="checkbox" name="r" value="2" />
-            <label for="02">Tomatoes</label>
+            <label htmlFor="02">Tomatoes</label>
             <input id="03" type="checkbox" name="r" value="3" />
-            <label for="03">Vegetables</label>
+            <label htmlFor="03">Vegetables</label>
           </div>
           <label className="checklist-header">Price Range</label>
           <div className="item-group reduce-margin-bottom">

@@ -218,7 +218,6 @@ function App() {
     },
   ]);
 
-  //this.state = {categories: [], products: []};
   const [productList, setProductList] = useState([]);
   const [CategoryList, setCategoryList] = useState([]);
   GetAllProducts();

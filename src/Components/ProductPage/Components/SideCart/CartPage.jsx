@@ -111,7 +111,7 @@ const CartPage = () => {
           <div className="checkout-second-div">
             <label className="discount-dropdown" onClick={discountDropdown}>
               Add a discount code (optional)
-              <span class="fas fa-caret-down"></span>
+              <span className="fas fa-caret-down"></span>
             </label>
             <div className="discount-dropdown change-to-grid">
               <input type="text" placeholder="CUW2021" />

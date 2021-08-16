@@ -8,7 +8,7 @@ const Header = () => {
         <nav className="nav bd-container">
           <a href="#" className="nav__logo">
             <span className="fas fa-shopping-basket"></span>
-            Crusty
+            Afri mart
           </a>
 
           <div className="nav__menu" id="nav-menu">

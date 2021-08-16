@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
+import NumberSelector from "./Components/NumberSelector";
 
 const Product = ({ product }) => {
   return <Fragment>{productBox(product)}</Fragment>;
@@ -28,7 +29,7 @@ function productBox(product) {
       </div>
       <div className="quantity">
         <span>quantity : </span>
-        <input type="number" min="1" max="1000" value="1" />
+        <NumberSelector />
         <span> /kg </span>
       </div>
       {/* <Link

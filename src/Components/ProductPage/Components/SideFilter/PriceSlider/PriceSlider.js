@@ -1,19 +1,24 @@
 import React from "react";
 import "./price-slider-style.css";
 import { Slider } from "@material-ui/core";
-import { useState } from "react";
 import Input from "./Input";
 
-const PriceSlider = () => {
-  const [val, setVal] = useState([30, 40]);
-  const updateRange = (e, data) => {
-    setVal(data);
-  };
+const PriceSlider = ({
+  quantity,
+  updateRange,
+  startValueHandler,
+  stopValueHandler,
+}) => {
   return (
     <div className="price-range-container">
-      <Input />
+      <Input
+        startValue={quantity[0]}
+        stopValue={quantity[1]}
+        startHandler={startValueHandler}
+        stopHandler={stopValueHandler}
+      />
       <div className="slider">
-        <Slider value={val} onChange={updateRange} />
+        <Slider value={quantity} onChange={(e, data) => updateRange(data)} />
       </div>
     </div>
   );

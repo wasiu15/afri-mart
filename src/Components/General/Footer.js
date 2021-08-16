@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer__container bd-grid">
           <div className="footer__content">
             <a href="#" className="footer__logo">
-              Tasty Food
+              Afri-mart
             </a>
             <span className="footer__description">Restaurant</span>
             <div>
@@ -87,9 +87,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className="footer__copy">
-          &#169; 2020 Bedimcode. All right reserved
-        </p>
+        <p className="footer__copy">&#169; 2021 Designed by Alfred.</p>
       </footer>
     </div>
   );

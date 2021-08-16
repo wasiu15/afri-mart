@@ -102,7 +102,9 @@
 /* CART PAGE BEGINS */
 /* CART PAGE BEGINS */
 /* CART PAGE BEGINS */
-
+.cart-title {
+  margin: 0 !important;
+}
 .cart-head {
   display: block;
   padding: 32px;

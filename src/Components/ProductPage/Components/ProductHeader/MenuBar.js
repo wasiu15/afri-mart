@@ -26,7 +26,7 @@ const MenuBar = () => {
     </div>
   );
   function toggleFilter() {
-    if (document.querySelector(".filter-sidebar").style.display == "openned") {
+    if (document.querySelector(".filter-sidebar").style.display == "block") {
       document.querySelector(".filter-sidebar").style.display = "none";
       document.querySelector(".cart-sidebar").style.display = "none";
       document.querySelector("#wrap").style.gridTemplateColumns = "1fr";

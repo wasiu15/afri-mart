@@ -190,11 +190,14 @@ label {
 .item-group {
   width: 100% !important;
   border-top: solid 1px lightgray;
-  padding-top: 20px;
   margin-top: 20px;
-  margin-bottom: 5em;
+  margin-bottom: 40px;
 }
 .item-group li,
 .item-group label {
   font-size: 12px;
+}
+
+.reduce-margin-bottom {
+  margin-bottom: 20px;
 }

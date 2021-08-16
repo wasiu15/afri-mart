@@ -25,13 +25,14 @@
 /* TEXT FIELD STYLES  */
 .inputs {
   display: grid;
+  font-size: 10px;
   grid-template-columns: 1fr 1fr;
+}
+.MuiInputBase-root {
+  font-size: 14px !important;
 }
 .MuiOutlinedInput-input {
   padding: 10px 10px 10px 0 !important;
-}
-.MuiTextField-root {
-  width: 70px !important;
 }
 .MuiOutlinedInput-notchedOutline {
   border-color: green !important;

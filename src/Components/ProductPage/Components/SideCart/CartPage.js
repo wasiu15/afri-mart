@@ -109,14 +109,26 @@ const CartPage = () => {
             <button>GO TO CHECKOUT</button>
           </div>
           <div className="checkout-second-div">
-            <label className="discount-dropdown">
+            <label className="discount-dropdown" onClick={discountDropdown}>
               Add a discount code (optional)
+              <span class="fas fa-caret-down"></span>
             </label>
+            <div className="discount-dropdown change-to-grid">
+              <input type="text" placeholder="CUW2021" />
+              <button>Submit</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
+  function discountDropdown() {
+    if (document.querySelector(".change-to-grid").style.display == "grid") {
+      document.querySelector(".change-to-grid").style.display = "none";
+    } else {
+      document.querySelector(".change-to-grid").style.display = "grid";
+    }
+  }
 };
 
 export default CartPage;

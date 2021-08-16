@@ -10,6 +10,12 @@
   font-size: 14px;
 }
 .cart-sidebar {
+  position: absolute;
+  right: 0;
+  background-color: white;
+  border: solid 1px green;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   display: block;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding-bottom: 16px;
@@ -55,6 +61,7 @@
 .cart-prod-details {
   position: relative;
   margin-bottom: 4px;
+  padding-left: 10px;
 }
 .cart-prod-details ul {
   list-style-type: none;
@@ -73,12 +80,17 @@
 .cart-prod-details button {
   position: absolute;
   bottom: 0;
-  padding: 3px 10px;
+  font-size: 12px;
+  padding: 0px 10px;
+  background-color: transparent;
+  border: solid 1px lightcoral;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   color: rgb(253, 52, 52);
 }
 .cart-prod-details button:hover {
-  color: rgb(253, 52, 52);
-  background-color: white;
+  color: white;
+  background-color: red;
   cursor: pointer;
 }
 .cartProductFooter {
@@ -239,6 +251,25 @@
   font-size: 14px;
   padding: 16px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+.discount-dropdown span {
+  margin-left: 10px;
+  font-size: 18px;
+}
+.change-to-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 0 !important;
+  display: none;
+}
+.discount-dropdown:first-child {
+  cursor: pointer !important;
+}
+.change-to-grid input {
+  text-align: center;
+  border: solid 1px green;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .checkout-first-div {

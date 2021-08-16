@@ -44,7 +44,7 @@ const MenuBar = () => {
     } else {
       document.querySelector(".cart-sidebar").style.display = "block";
       document.querySelector(".filter-sidebar").style.display = "none";
-      document.querySelector("#wrap").style.gridTemplateColumns = "3fr 1fr";
+      document.querySelector("#wrap").style.gridTemplateColumns = "1fr";
     }
   }
 };

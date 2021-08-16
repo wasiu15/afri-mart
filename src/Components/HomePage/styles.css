@@ -161,6 +161,9 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+.l-header nav {
+  border: none;
+}
 
 @media screen and (max-width: 768px) {
   .nav__menu {

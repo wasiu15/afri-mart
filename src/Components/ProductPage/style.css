@@ -99,14 +99,14 @@ body {
 }
 
 .header-1 {
-  background: #eee;
+  background-color: val(--body-color);
   display: flex;
   justify-content: space-between;
   padding: 8px 5% 4px 9%;
 }
 
 .logo {
-  color: var(--black);
+  color: var(--title-color);
   font-weight: bolder;
   font-size: 24px;
 }
@@ -161,7 +161,7 @@ body {
 }
 
 .header-2 {
-  background: #fff;
+  background-color: --body-color;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -192,7 +192,7 @@ body {
 
 .header-2 .icons a {
   font-size: 20px;
-  color: var(--black);
+  color: var(--title-color);
   padding-left: 8px;
 }
 
